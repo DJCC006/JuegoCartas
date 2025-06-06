@@ -4,6 +4,9 @@
  */
 package com.mycompany.gamecartas;
 
+import javax.swing.ImageIcon;
+
+
 /**
  *
  * @author David
@@ -15,6 +18,8 @@ public class PanelJuego extends javax.swing.JFrame {
      */
     public PanelJuego() {
         initComponents();
+        ImageIcon icono= new ImageIcon(getClass().getResource("back.jpg"));
+        button1.setIcon(icono);
     }
 
     /**
