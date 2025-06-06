@@ -18,8 +18,9 @@ public class PanelJuego extends javax.swing.JFrame {
      */
     public PanelJuego() {
         initComponents();
-        ImageIcon icono= new ImageIcon(getClass().getResource("back.jpg"));
+        ImageIcon icono= new ImageIcon(getClass().getResource("back1.jpg"));
         button1.setIcon(icono);
+        System.out.println("Hola");
     }
 
     /**
@@ -633,6 +634,7 @@ public class PanelJuego extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 new PanelJuego().setVisible(true);
             }
