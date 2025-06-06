@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package com.mycompany.gamecartas;
+import javax.swing.JButton;
 
 import javax.swing.ImageIcon;
 
@@ -13,15 +14,61 @@ import javax.swing.ImageIcon;
  */
 public class PanelJuego extends javax.swing.JFrame {
 
-    /**
-     * Creates new form PanelJuego
-     */
+    private GameCartas gameCartas;
+    private JButton[] BotonesArreglo;
+    
     public PanelJuego() {
-        initComponents();
-        ImageIcon icono= new ImageIcon(getClass().getResource("back1.jpg"));
-        button1.setIcon(icono);
-        System.out.println("Hola");
+       initComponents();
+       ConfigurarJuego();
+      
     }
+    
+        private void ConfigurarJuego() {
+        //Crear arreglos de botones para un acceso facil
+        BotonesArreglo = new JButton[36];
+        BotonesArreglo[0] = button1;
+        BotonesArreglo[1] = button2;
+        BotonesArreglo[2] = button3;
+        BotonesArreglo[3] = button4;
+        BotonesArreglo[4] = button5;
+        BotonesArreglo[5] = button6;
+        BotonesArreglo[6] = button7;
+        BotonesArreglo[7] = button8;
+        BotonesArreglo[8] = button9;
+        BotonesArreglo[9] = button10;
+        BotonesArreglo[10] = button11;
+        BotonesArreglo[11] = button12;
+        BotonesArreglo[12] = button13;
+        BotonesArreglo[13] = button14;
+        BotonesArreglo[14] = button15;
+        BotonesArreglo[15] = button16;
+        BotonesArreglo[16] = button17;
+        BotonesArreglo[17] = button18;
+        BotonesArreglo[18] = button19;
+        BotonesArreglo[19] = button20;
+        BotonesArreglo[20] = button21;
+        BotonesArreglo[21] = button22;
+        BotonesArreglo[22] = button23;
+        BotonesArreglo[23] = button24;
+        BotonesArreglo[24] = button25;
+        BotonesArreglo[25] = button26;
+        BotonesArreglo[26] = button27;
+        BotonesArreglo[27] = button28;
+        BotonesArreglo[28] = button29;
+        BotonesArreglo[29] = button30;
+        BotonesArreglo[30] = button31;
+        BotonesArreglo[31] = button32;
+        BotonesArreglo[32] = button33;
+        BotonesArreglo[33] = button34;
+        BotonesArreglo[34] = button35;
+        BotonesArreglo[35] = button36;
+        
+        //Crear la instancia de la logica
+        gameCartas = new GameCartas(this, BotonesArreglo);
+    }
+    
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -462,147 +509,147 @@ public class PanelJuego extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
-        // TODO add your handling code here:
+         gameCartas.ManejarClicCarta(0);
     }//GEN-LAST:event_button1ActionPerformed
 
     private void button2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button2ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(1);
     }//GEN-LAST:event_button2ActionPerformed
 
     private void button3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button3ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(2);
     }//GEN-LAST:event_button3ActionPerformed
 
     private void button4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button4ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(3);
     }//GEN-LAST:event_button4ActionPerformed
 
     private void button5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button5ActionPerformed
-        // TODO add your handling code here:
+       gameCartas.ManejarClicCarta(4);
     }//GEN-LAST:event_button5ActionPerformed
 
     private void button6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button6ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(5);
     }//GEN-LAST:event_button6ActionPerformed
 
     private void button8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button8ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(7);
     }//GEN-LAST:event_button8ActionPerformed
 
     private void button9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button9ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(8);
     }//GEN-LAST:event_button9ActionPerformed
 
     private void button10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button10ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(9);
     }//GEN-LAST:event_button10ActionPerformed
 
     private void button11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button11ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(10);
     }//GEN-LAST:event_button11ActionPerformed
 
     private void button12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button12ActionPerformed
-        // TODO add your handling code here:
+       gameCartas.ManejarClicCarta(11);
     }//GEN-LAST:event_button12ActionPerformed
 
     private void button7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button7ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(6);
     }//GEN-LAST:event_button7ActionPerformed
 
     private void button14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button14ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(13);
     }//GEN-LAST:event_button14ActionPerformed
 
     private void button15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button15ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(14);
     }//GEN-LAST:event_button15ActionPerformed
 
     private void button16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button16ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(15);
     }//GEN-LAST:event_button16ActionPerformed
 
     private void button17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button17ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(16);
     }//GEN-LAST:event_button17ActionPerformed
 
     private void button18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button18ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(17);
     }//GEN-LAST:event_button18ActionPerformed
 
     private void button13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button13ActionPerformed
-        // TODO add your handling code here:
+       gameCartas.ManejarClicCarta(12);
     }//GEN-LAST:event_button13ActionPerformed
 
     private void button20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button20ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(19);
     }//GEN-LAST:event_button20ActionPerformed
 
     private void button21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button21ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(20);
     }//GEN-LAST:event_button21ActionPerformed
 
     private void button22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button22ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(21);
     }//GEN-LAST:event_button22ActionPerformed
 
     private void button23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button23ActionPerformed
-        // TODO add your handling code here:
+       gameCartas.ManejarClicCarta(22);
     }//GEN-LAST:event_button23ActionPerformed
 
     private void button24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button24ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(23);
     }//GEN-LAST:event_button24ActionPerformed
 
     private void button19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button19ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(18);
     }//GEN-LAST:event_button19ActionPerformed
 
     private void button25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button25ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(24);
     }//GEN-LAST:event_button25ActionPerformed
 
     private void button26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button26ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(25);
     }//GEN-LAST:event_button26ActionPerformed
 
     private void button27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button27ActionPerformed
-        // TODO add your handling code here:
+       gameCartas.ManejarClicCarta(26);
     }//GEN-LAST:event_button27ActionPerformed
 
     private void button28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button28ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(27);
     }//GEN-LAST:event_button28ActionPerformed
 
     private void button29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button29ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(28);
     }//GEN-LAST:event_button29ActionPerformed
 
     private void button30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button30ActionPerformed
-        // TODO add your handling code here:
+       gameCartas.ManejarClicCarta(29);
     }//GEN-LAST:event_button30ActionPerformed
 
     private void button31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button31ActionPerformed
-        // TODO add your handling code here:
+       gameCartas.ManejarClicCarta(30);
     }//GEN-LAST:event_button31ActionPerformed
 
     private void button32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button32ActionPerformed
-        // TODO add your handling code here:
+       gameCartas.ManejarClicCarta(31);
     }//GEN-LAST:event_button32ActionPerformed
 
     private void button33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button33ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(32);
     }//GEN-LAST:event_button33ActionPerformed
 
     private void button34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button34ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(33);
     }//GEN-LAST:event_button34ActionPerformed
 
     private void button35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button35ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(34);
     }//GEN-LAST:event_button35ActionPerformed
 
     private void button36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button36ActionPerformed
-        // TODO add your handling code here:
+        gameCartas.ManejarClicCarta(35);
     }//GEN-LAST:event_button36ActionPerformed
 
     /**
@@ -631,7 +678,7 @@ public class PanelJuego extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(PanelJuego.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
